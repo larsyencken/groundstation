@@ -21,7 +21,7 @@ def _create_option_parser():
 
 
 def _create_station():
-    station_path = os.expanduser("~/.groundstation")
+    station_path = os.path.expanduser("~/.groundstation")
     myself = Node()
     station = Station(station_path, myself)
     return station
