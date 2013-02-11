@@ -9,6 +9,9 @@ groundstation/proto/git_object_pb2.py: groundstation/proto/git_object.proto
 groundstation/proto/object_list_pb2.py: groundstation/proto/object_list.proto
 	protoc --python_out=./ groundstation/proto/object_list.proto
 
+groundstation/proto/events/issue_pb2.py: groundstation/proto/events/issue.proto
+	protoc --python_out=./groundstation/proto/events/issue.proto
+
 clean:
 	find ./ -iname "*.pyc" -delete
 

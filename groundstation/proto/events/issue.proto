@@ -1,0 +1,4 @@
+message Event {
+    required int create_timestamp = 1;
+    required bytes data;
+}
